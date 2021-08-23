@@ -18,6 +18,9 @@ const BudgetApp = () => {
   if (!user) {
     return <Redirect to="./signin" />;
   }
+  if (user.id === "admin") {
+    return <Redirect to="./admin" />;
+  }
 
   return (
     <BudgetProvider>

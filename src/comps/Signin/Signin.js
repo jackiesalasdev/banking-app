@@ -1,4 +1,7 @@
 import useSignin from "./useSignin";
+import { useGetAuth } from "../../context/Auth/AuthProvider";
+
+import { Redirect } from "react-router-dom";
 
 export default function Signin() {
   const {
@@ -9,6 +12,12 @@ export default function Signin() {
     handlePwChange,
     handleSubmit,
   } = useSignin();
+
+  const user = useGetAuth();
+  if (user) {
+    return <Redirect to="/" />;
+  }
+
   return (
     <div className="signin">
       <form className="signin__form" onSubmit={handleSubmit}>

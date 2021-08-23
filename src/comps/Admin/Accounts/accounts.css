@@ -1,0 +1,23 @@
+.accounts {
+  display: flex;
+  flex-direction: column;
+}
+
+.account {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 1fr;
+}
+
+.account:first-child {
+  background-color: rgb(85, 69, 69);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.account div {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.5rem;
+}

@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -9,6 +10,9 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Baloo Da 2";
+}
 .container {
   width: 100%;
   height: 100vh;
@@ -39,6 +43,51 @@ html {
   grid-template-columns: minmax(38%, 40rem) repeat(2, minmax(29%, 29rem));
   grid-template-rows: repeat(10, 1fr);
   grid-gap: 1rem;
+}
+
+.admin {
+  padding: 1.5rem;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  grid-gap: 0;
+}
+
+.admin__nav {
+  grid-column: 1 /3;
+  display: flex;
+}
+
+.admin__nav a {
+  display: block;
+  color: #eee;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+.admin__nav a.active {
+  text-shadow: 0 0 0.3rem rgba(254, 254, 254, 0.6);
+  font-weight: bold;
+}
+
+.admin__forms {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.admin__accounts {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.admin__accounts ul {
+  width: 95%;
+
+  border: 1px solid #eee;
 }
 /*over ride*/
 .signin {
