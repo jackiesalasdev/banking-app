@@ -1,7 +1,10 @@
 import React, { useContext } from "react";
 import { BudgetContext } from "../../context/Budget/BudgetProvider";
-
+import { useGetAuth } from "../../context/Auth/AuthProvider";
 const Balance = () => {
+  const user = useGetAuth();
+  // + = string to number
+  const userBalance = +user.balance;
   const { incomeTransactions, expenseTransactions } = useContext(BudgetContext);
 
   const incomeAmounts = incomeTransactions.map(
@@ -23,7 +26,7 @@ const Balance = () => {
   return (
     <div className="balance">
       <h2>Your Balance</h2>
-      <h3>${(totalIncome - totalExpenses).toFixed(2)}</h3>
+      <h3>${(totalIncome - totalExpenses + userBalance).toFixed(2)}</h3>
       <div className="income-expense">
         <div className="plus">
           <h3>Income</h3>
