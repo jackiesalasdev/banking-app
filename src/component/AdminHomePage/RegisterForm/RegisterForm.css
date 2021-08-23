@@ -1,0 +1,25 @@
+tr {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: 4rem;
+}
+
+button {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+input {
+  width: 25rem;
+  height: 4rem;
+}

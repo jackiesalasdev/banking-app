@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: rgb(0, 0, 0);
+  background-image: url("C:\Users\jgrsa\OneDrive\Desktop\banking-app\src\t4.jpg");
+  background-position: center;
+  background-size: cover;
+}
