@@ -5,9 +5,10 @@ import { accounts } from "./accounts";
 
 const dispatchContext = createContext();
 const stateContext = createContext();
+const initialState = JSON.parse(localStorage.getItem("accounts")) || accounts;
 
 export default function AccountsProvider(props) {
-  const [state, dispatch] = useReducer(accountsReducer, accounts);
+  const [state, dispatch] = useReducer(accountsReducer, initialState);
   return (
     <stateContext.Provider value={state}>
       <dispatchContext.Provider value={dispatch}>
