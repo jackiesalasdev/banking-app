@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useGetAcc } from "../../context/Accounts/AccountsProvider";
+import { useSetAuth } from "../../context/Auth/AuthProvider";
 
 export default function useSignin() {
+  const setAuth = useSetAuth();
   const accounts = useGetAcc();
   console.log(accounts);
   const history = useHistory();
@@ -32,6 +34,10 @@ export default function useSignin() {
       setPassword("");
       return;
     }
+    //save user to context
+    setAuth({ type: "login", payload: foundAcc });
+    //redirect to home
+    history.push("/");
   }
   return {
     error,

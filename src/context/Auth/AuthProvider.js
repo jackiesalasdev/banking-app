@@ -1,7 +1,8 @@
 import { createContext, useReducer, useContext } from "react";
 import authReducer from "./authReducer";
 
-const initialState = null;
+//get
+const initialState = JSON.parse(localStorage.getItem("user"));
 const dispatchContext = createContext();
 const stateContext = createContext();
 
