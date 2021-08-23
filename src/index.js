@@ -2,10 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
 import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import AccountsProvider from "./context/Accounts/AccountsProvider";
+import AuthProvider from "./context/Auth/AuthProvider";
 
 ReactDOM.render(
-  <App />,
-
+  <BrowserRouter>
+    <AccountsProvider>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </AccountsProvider>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
