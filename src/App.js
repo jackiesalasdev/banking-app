@@ -1,15 +1,8 @@
 import React from "react";
-import "./App.css";
-import AdminHomePage from "./component/AdminHomePage/AdminHomePage";
-import PublicHomePage from "./component/PublicHomePage/PublicHomePage";
+import BudgetApp from "./BudgetApp";
 
 function App() {
-  return (
-    <div className="appDiv">
-      {/* <AdminHomePage /> */}
-      {/* <PublicHomePage /> */}
-    </div>
-  );
+  return <BudgetApp />;
 }
 
 export default App;
