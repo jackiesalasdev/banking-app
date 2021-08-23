@@ -16,7 +16,15 @@ export const accounts = [
   {
     name: "Rafael",
     id: "2",
-    email: "user2@mail.com",
+    email: "rafael@mail.com",
+    password: "123",
+    balance: 1000,
+  },
+
+  {
+    name: "Salas",
+    id: "3",
+    email: "salas@mail.com",
     password: "123",
     balance: 1000,
   },

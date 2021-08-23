@@ -1,8 +1,10 @@
 import React, { useState, useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { BudgetContext } from "../../context/Budget/BudgetProvider";
+import { useGetAuth } from "../../context/Auth/AuthProvider";
 
 const AddTransaction = () => {
+  const user = useGetAuth();
   const { addIncome, addExpense } = useContext(BudgetContext);
 
   const [income, setIncome] = useState({
@@ -22,6 +24,7 @@ const AddTransaction = () => {
     if (incomeText !== "") {
       const newIncomeTransaction = {
         id: uuidv4(),
+        account: user.id,
         incomeText,
         incomeAmount: incomeAmount * 1,
       };
@@ -53,6 +56,7 @@ const AddTransaction = () => {
       const newExpenseTransaction = {
         id: uuidv4(),
         expenseText,
+        account: user.id,
         expenseAmount: expenseAmount * 1,
       };
 
