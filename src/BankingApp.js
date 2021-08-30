@@ -15,7 +15,7 @@ export default function BankingApp() {
     setAuth({ type: "logout" });
   }
   if (!user) {
-    return <Redirect to="./signin" />;
+    return <Redirect to="/signin" />;
   }
   if (user.id !== "admin") {
     return <Redirect to="/" />;

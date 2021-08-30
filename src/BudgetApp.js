@@ -16,10 +16,10 @@ const BudgetApp = () => {
     setAuth({ type: "logout" });
   }
   if (!user) {
-    return <Redirect to="./signin" />;
+    return <Redirect to="/signin" />;
   }
   if (user.id === "admin") {
-    return <Redirect to="./admin" />;
+    return <Redirect to="/admin" />;
   }
 
   return (
