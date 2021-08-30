@@ -13,7 +13,7 @@
     "uuid": "^8.3.2",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "  https://jackiesalasdev.github.io/banking-app/",
+  "homepage": "  https://jackiesalasdev.github.io/banking-app",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

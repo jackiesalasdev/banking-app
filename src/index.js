@@ -7,7 +7,7 @@ import AccountsProvider from "./context/Accounts/AccountsProvider";
 import AuthProvider from "./context/Auth/AuthProvider";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/banking-app">
     <AccountsProvider>
       <AuthProvider>
         <App />
