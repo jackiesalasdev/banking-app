@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/banking-app/static/css/main.5b96e4f9.chunk.css",
-    "main.js": "/banking-app/static/js/main.48897b06.chunk.js",
-    "main.js.map": "/banking-app/static/js/main.48897b06.chunk.js.map",
+    "main.js": "/banking-app/static/js/main.02adb244.chunk.js",
+    "main.js.map": "/banking-app/static/js/main.02adb244.chunk.js.map",
     "runtime-main.js": "/banking-app/static/js/runtime-main.6e9be3f6.js",
     "runtime-main.js.map": "/banking-app/static/js/runtime-main.6e9be3f6.js.map",
     "static/js/2.d218bfb6.chunk.js": "/banking-app/static/js/2.d218bfb6.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.6e9be3f6.js",
     "static/js/2.d218bfb6.chunk.js",
     "static/css/main.5b96e4f9.chunk.css",
-    "static/js/main.48897b06.chunk.js"
+    "static/js/main.02adb244.chunk.js"
   ]
 }
