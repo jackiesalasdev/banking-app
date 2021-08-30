@@ -40,10 +40,10 @@ export default function BankingApp() {
       </div>
       <div className="admin__forms">
         <Switch>
-          <Route path={`${url}/deposit`} component={Deposit} />
-          <Route path={`${url}/withdraw`} component={Withdraw} />
-          <Route path={`${url}/transfer`} component={Transfer} />
-          <Route path={`${url}/create`} component={Creator} />
+          <Route path={`${path}/deposit`} component={Deposit} />
+          <Route path={`${path}/withdraw`} component={Withdraw} />
+          <Route path={`${path}/transfer`} component={Transfer} />
+          <Route path={`${path}/create`} component={Creator} />
         </Switch>
       </div>
     </div>
